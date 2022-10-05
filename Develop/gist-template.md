@@ -6,7 +6,7 @@ Regular expressions are patterns used to match character combinations in strings
 
 In this tutorial we will be describing how the following Regex is used to match an email address:
 
-const rexEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+```const rexEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;```
 
 ## Table of Contents
 
