@@ -50,9 +50,9 @@ In this tutorial we will be describing how the following Regex is used to match 
 ### Character Classes
 
 - ```\d         matches a single character that is a digit```
--```\w         matches a word character (alphanumeric character plus underscore)```
--```\s         matches a whitespace character (includes tabs and line breaks)```
--````.          matches any character```
+- ```\w         matches a word character (alphanumeric character plus underscore)```
+- ```\s         matches a whitespace character (includes tabs and line breaks)```
+- ````.          matches any character```
 
 ### Flags
 
@@ -60,12 +60,12 @@ In this tutorial we will be describing how the following Regex is used to match 
 
 <p>There are only 6 of them in JavaScript:</p
 
--```i  With this flag the search is case-insensitive: no difference between A and a.```
--```g  With this flag the search looks for all matches, without it – only the first match is returned.```
--```m  Multiline mode.```
--```s  Enables “dotall” mode, that allows a dot . to match newline character \n.```
--```u  Enables full Unicode support. The flag enables correct processing of surrogate pairs.```
--```y  “Sticky” mode: searching at the exact position in the text.```
+- ```i  With this flag the search is case-insensitive: no difference between A and a.```
+- ```g  With this flag the search looks for all matches, without it – only the first match is returned.```
+- ```m  Multiline mode.```
+- ```s  Enables “dotall” mode, that allows a dot . to match newline character \n.```
+- ```u  Enables full Unicode support. The flag enables correct processing of surrogate pairs.```
+- ```y  “Sticky” mode: searching at the exact position in the text.```
 
 ### Grouping and Capturing
 
@@ -73,11 +73,11 @@ In this tutorial we will be describing how the following Regex is used to match 
 
 ### Bracket Expressions
 
--```[ ] Brackets indicate a set of characters to match. Any individual character between the brackets will match, and you can also use a hyphen to define a set```
--```You can use the ^ metacharacter to negate what is between the brackets.```
--```{ } Curly braces are used to specify an exact amount of things to match.```
--```( ) Parentheses represent remembered matches. This is especially useful for find-and-replace operations or any time you need to do something with part of the match.```
--```Parentheses are also used in regex to group parts of the expression together into subgroups, like in /(\$|¥)([0-9]+)\.([0-9]{2})/.```
+- ```[ ] Brackets indicate a set of characters to match. Any individual character between the brackets will match, and you can also use a hyphen to define a set```
+- ```You can use the ^ metacharacter to negate what is between the brackets.```
+- ```{ } Curly braces are used to specify an exact amount of things to match.```
+- ```( ) Parentheses represent remembered matches. This is especially useful for find-and-replace operations or any time you need to do something with part of the match.```
+- ```Parentheses are also used in regex to group parts of the expression together into subgroups, like in /(\$|¥)([0-9]+)\.([0-9]{2})/.```
 
 ### Greedy and Lazy Match
 
