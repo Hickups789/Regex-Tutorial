@@ -81,9 +81,29 @@ In this tutorial we will be describing how the following Regex is used to match 
 
 ### Greedy and Lazy Match
 
+## Greedy
+<p>By default the regular expression engine tries to repeat the quantified character as many times as possible. For instance, \d+ consumes all possible digits. When it becomes impossible to consume more (no more digits or string end), then it continues to match the rest of the pattern. If there’s no match then it decreases the number of repetitions (backtracks) and tries again.</p>
+
+## Lazy
+<p>Enabled by the question mark ? after the quantifier. The regexp engine tries to match the rest of the pattern before each repetition of the quantified character.</p>
+
 ### Boundaries
 
+<p>The (\b) is an anchor like the caret (^) and the dollar sign ($). It matches a position that is called a “word boundary”. The word boundary match is zero-length.</p>
+
+<p>The following three positions are qualified as word boundaries:
+
+- <p>Before the first character in a string if the first character is a word character.</p>
+- <p>After the last character in a string if the last character is a word character.</p>
+- <p>Between two characters in a string if one is a word character and the other is not.</p>
+
+<p>Simply put, the word boundary \b allows you to carry the match the whole word using a regular expression in the following form:</p>
+
+```\bword\b```
+
 ### Back-references
+
+
 
 ### Look-ahead and Look-behind
 
