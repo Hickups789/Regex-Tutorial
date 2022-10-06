@@ -103,10 +103,20 @@ In this tutorial we will be describing how the following Regex is used to match 
 
 ### Back-references
 
-
+<p>Backreferences match the same text as previously matched by a capturing group. Suppose you want to match a pair of opening and closing HTML tags, and the text in between. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag. Here’s how: <([A-Z][A-Z0-9]*)\b[^>]*>.*?</\1>. This regex contains only one pair of parentheses, which capture the string matched by [A-Z][A-Z0-9]*. This is the opening HTML tag. (Since HTML tags are case insensitive, this regex requires case insensitive matching.) The backreference \1 (backslash one) references the first capturing group. \1 matches the exact same text that was matched by the first capturing group. The / before it is a literal character. It is simply the forward slash in the closing HTML tag that we are trying to match.</p>
 
 ### Look-ahead and Look-behind
 
+## Lookahead
+The syntax is:
+- ```X(?=Y)```, it means "look for ```X```, but match only if followed by ```Y"```. There may be any pattern instead of X and Y.
+## Lookbehind
+Lookahead allows to add a condition for “what follows”.
+Lookbehind is similar, but it looks behind. That is, it allows to match a pattern only if there’s something before it.
+The syntax is:
+- Positive lookbehind: ```(?<=Y)X```, matches X, but only if there’s Y before it.
+- Negative lookbehind: ```(?<!Y)X```, matches X, but only if there’s no Y before it.
+
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
