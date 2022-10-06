@@ -119,4 +119,7 @@ The syntax is:
 
 
 ## Author
+(https://hickups789.github.io/Regex-Tutorial/)
+(https://github.com/Hickups789/Regex-Tutorial.git)
+
 
